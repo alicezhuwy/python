@@ -1,0 +1,5 @@
+## ask user input something and print it as output ##
+name = input("What is your name?")
+print("Hi, " + name)
+print("Welcome to Programming Fundamentals")
+input()
