@@ -1,0 +1,12 @@
+price = input("Please enter the base price of the car:")
+price = float(price)
+tax = 0.125*price
+fee = 0.01*price
+dealer = 0.05*price
+charge = 0.03*price
+print("Tax (12.5%) for the car is", tax)
+print("License fee (1%) is 100.00", fee)
+print("Dealer prep (5%) is 500.00", dealer)
+print("Destination charge (3%) is", charge)
+print("The total price of the car with every fee:", price+tax+fee+dealer+charge)
+input()
