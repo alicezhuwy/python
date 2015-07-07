@@ -1,0 +1,20 @@
+import random
+print("You were given a fortune cookie, you opened it and the message is:")
+selection = random.randint(1,5)
+if selection == 1:
+    print("A good head and a good heart are always a formidable combination")
+
+if selection == 2:
+    print("The journey of a thousand miles begins with one step.")
+
+if selection == 3:
+    print("Let us act on what we have since we do not have what we wish.")
+
+if selection == 4:
+    print("A day of worry is more exhausting than a week of work.")
+
+if selection == 5:
+    print("Talent is God given. Be humble. Fame is man-given. Be grateful. Conceit is self-given. Be careful.")
+
+    
+
