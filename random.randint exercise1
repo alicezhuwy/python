@@ -1,0 +1,10 @@
+import random
+number1 = random.randint(1,9)
+print(number1)
+number2 = random.randint(1,9)
+print(number2)
+total = number1+number2
+print(total)
+
+print("You rolled a ", number1, "and a ", number2, "for a total of ", total )
+
