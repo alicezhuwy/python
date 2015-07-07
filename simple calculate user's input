@@ -1,0 +1,13 @@
+
+number = input("Enter a number:")
+print(number)
+x = int(number)
+result = x * 3;
+print(result)
+input()
+
+number = int(input("Enter a number:"))
+print(number)
+result = number * 3;
+print(result)
+input()
