@@ -1,0 +1,19 @@
+a = "2"
+x = int(a)
+print(x)
+input()
+
+b = 4.3
+x = str(b)
+print(x)
+input()
+
+c = "6"
+x = int(c)
+print(x)
+input()
+
+d = 'abc'
+x = str(d)
+print(x)
+input()
