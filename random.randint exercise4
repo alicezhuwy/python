@@ -1,0 +1,8 @@
+print("I have a number in my mind, can you guess the number?")
+import random
+x = random.randint(1,50)
+number = int(input("Enter your guess:"))
+if number == x:
+    print("yes, you gotit right!")
+else:
+    print("No, it is not right.")
