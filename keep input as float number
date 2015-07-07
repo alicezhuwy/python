@@ -1,0 +1,9 @@
+rent = float(input("how much is your rent (weekly)?"))
+
+fare = float(input("How much do you pay for bus fare (weekly)?"))
+
+grocery = float(input("how much did you spend on grocery last week?"))
+
+print("Your total weekly cost:", float(rent+fare+grocery))
+input()
+
