@@ -1,0 +1,5 @@
+attempt = input("What is the password?")
+while attempt != "secret":
+    print("That was wrong!, try again!")
+    attempt = input("What is the password?")
+    
