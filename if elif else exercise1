@@ -1,0 +1,15 @@
+print ("Welcome to Unitec CyberSecruity Inc.")
+password = input("Enter your password:")
+if password == "Unitec":
+    print("Access granted!")
+
+elif password == "Hollywood":
+    print("Administrator access!!")
+    print("Welcome, Administrator")
+
+else:
+    print("Access denied!")
+
+input("\n\nPress the enter key to exit.")
+
+input()
