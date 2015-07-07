@@ -1,0 +1,5 @@
+number = 5
+another_number = 1
+while number > another_number:
+    print("Here is another loop")
+    another_number = another_number + 1
