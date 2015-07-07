@@ -1,0 +1,7 @@
+import random
+print("The winning lotto numbers this week are:")
+counter = 1
+while counter <= 7:
+    num = random.randint(1,40)
+    print(num, end = " ")
+    counter = counter + 1
