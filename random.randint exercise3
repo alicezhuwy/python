@@ -1,0 +1,23 @@
+print("I sense your energy. Your true emotions are coming across my screen.")
+print("You are...")
+import random
+x = random.randint(1,3)
+if x == 1:
+    print("------")
+    print("|>  <|")
+    print("|  > |")
+    print("|  V |")
+    print("------")
+elif x == 2:
+    print("------")
+    print("|.  .|")
+    print("|  > |")
+    print("|  O |")
+    print("------")
+elif x == 3:
+    print("------")
+    print("|T  T|")
+    print("|  > |")
+    print("|  ^ |")
+    print("------")
+else: print("it's an illegal value, you must be in a really bad mood today!")
