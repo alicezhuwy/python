@@ -1,0 +1,14 @@
+str_a = "Toronto"
+str_b = ""
+vowels = ['a','e','i','o','u']
+
+for x in str_a:
+    if x in vowels:
+        str_b += x
+    
+print(str_b)
+
+for letter in str_b:
+    print(letter)
+
+
