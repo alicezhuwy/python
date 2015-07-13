@@ -1,0 +1,28 @@
+input("I'm thinking of a number between 1 and 100.\n Try to guess it in as few attempts as possible.")
+import random
+
+
+number = random.randint(1,100)
+num_input = int(input("Take a guess: "))
+guess = 0
+
+
+while num_input != number:
+    
+    
+    guess = guess + 1
+
+    if  num_input<0 or num_input>=100:
+        print("The number should be in 1 to 100.")
+        num_input = int(input("Take a guess: "))
+    else:
+        if number>num_input:
+            print("your number is more less.")
+            num_input = int(input("Take a guess: "))
+        elif number<num_input:           
+            print("your number is bigger.")
+            num_input = int(input("Take a guess: "))
+
+    
+print("You guessed it! The numbes was", number)
+print("And it only took you", guess,"to guess")
