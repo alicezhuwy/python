@@ -1,0 +1,8 @@
+list_c = ["Afghanistan", "Belarus", "Austria", "Pakistan", "Colombia"]
+counter = 0
+for x in list_c:
+    if "stan" in x:
+        
+        counter += 1
+
+print(counter, "country names were found to contain 'stan'")
