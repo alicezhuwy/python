@@ -1,0 +1,8 @@
+word = str(input("Enter a word:"))
+
+print("Printing it out backward:", end="")
+
+for i in range(len(word)-1, -1, -1):
+    
+    print(word[i], end="")
+    
