@@ -1,0 +1,11 @@
+sizes = ['S', 'XS', 'M', 'L', 'XL']
+i=0
+
+while i < 3:
+
+    print(sizes[i])
+    i=i+1
+
+for x in sizes:
+    print(x)
+    
