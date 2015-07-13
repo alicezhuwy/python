@@ -1,0 +1,11 @@
+str_a = "Toronto"
+str_b = "Tasman"
+str_c = "Auckland"
+# delete the second character of each string
+str_a = str_a[0] + str_a[2:7]
+str_b = str_b[0] + str_b[2:6]
+str_c = str_c[0] + str_c[2:8]
+
+print(str_a) # should print Tronto
+print(str_b) # should print Tsman
+print(str_c) # should print Ackland
