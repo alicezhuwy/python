@@ -1,0 +1,34 @@
+def has_six(list):
+    count = 0
+    for i in list:
+        if i == 6:
+            count += 1
+            
+    if count > 0:
+        return True
+    elif count == 0:
+        return False
+
+    
+def has_six2(list_a):
+    
+    if 6 in list_a:
+        a=True
+
+    else:
+        a=False
+    return a
+
+
+
+a=[4,5,6,7,7,8,9]
+b=[4,3,2,1,0,-2,4]
+c=[4.4,5.5,6.6,7.7]
+
+print(has_six(a))
+print(has_six(b))
+print(has_six(c))
+
+print(has_six2(a))
+print(has_six2(b))
+print(has_six2(c))
