@@ -1,0 +1,10 @@
+def noFours(list):
+    for i in range(len(list)):
+        if list[i-1] == 4:
+            list[i-1]=5
+    return list
+
+a=[1,2,3,4]
+b=[3,3,4,4]
+print(noFours(a))
+print(noFours(b))
