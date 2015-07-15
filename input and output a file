@@ -1,0 +1,89 @@
+# Date: 26 May 2015
+# Description: COuntry Name Search System
+# Author: Iman Ardekani / based on a previous version made by Tony Kuo
+def SaveCountries():
+    global countryList
+    fi = open("countryNames.txt", "w")
+    for i in countryList:
+        fi.write(i+"\n")
+    fi.close()
+
+def LoadCountries():
+    global countryList
+    countryList=[]
+    fo = open("countryNames.txt", "r")
+    line = fo.readline()
+    while (line != ""):
+        countryList.append(line.strip())
+        line = fo.readline()
+    fo.close()
+        
+countryList = []
+def showMenu():
+    print(
+    """
+    Country Name Search System
+    0 - Exit
+    1 - Show all countries
+    2 - Add a new country
+    3 - Remove a country
+    4 - Sort countries by name
+    5 - Save all countries to file
+    6 - Read countries from file
+    """
+    )
+def processChoice(selection):
+    # exit
+    if selection == "0":
+        print("Good-bye.")
+
+    # list countries
+    elif selection == "1":
+         print("List of countries")
+         for name in countryList:
+            print(name)
+
+    # Improved, so a duplicate name will not be added
+    elif selection == "2":
+
+        aName = input(str("Add a new country: "))
+   
+        if aName not in countryList:
+            countryList.append(aName)
+        print (aName, "has been added.")
+
+    # remove a country by name
+    elif selection == "3":
+        aName = input("Remove a country? (case-sensitive): ")
+        if aName in countryList:
+            countryList.remove(aName)
+            print (aName, "has been deleted.")
+        else:
+            print(aName, "isn't in the country list.")
+
+    # sort country names
+    elif selection == "4":
+        for name in sorted(countryList):
+            print(name)
+
+    # Save all countries to file
+    elif selection == "5":
+        SaveCountries()
+
+    # Read countries from file
+    elif selection == "6":
+        LoadCountries()
+        
+    # some unknown choice
+    else:
+        print("Sorry, but", selection, "isn't a valid choice.")
+  
+choice = None
+while not choice == "0":
+    showMenu()
+    choice = input("Choice: ")
+    processChoice(choice)
+    print() # prints an empty line
+
+    
+input("\n\nPress the enter key to exit.")
