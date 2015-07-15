@@ -1,0 +1,4 @@
+def beginEnd(word):
+    return((word[0])+(word[len(word)-1]))
+print(beginEnd("chair"))
+print(beginEnd("tables"))
